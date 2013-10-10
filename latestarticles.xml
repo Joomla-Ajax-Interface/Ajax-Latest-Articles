@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5"
+           type="plugin"
+           group="ajax"
+           method="upgrade">
+	<name>Ajax - Latest Articles</name>
+	<version>0.1</version>
+	<creationDate>May 20, 2013</creationDate>
+	<author>Matt Thomas</author>
+	<authorEmail>matt@betweenbrain.com</authorEmail>
+	<authorUrl>http://www.betweenbrain.com</authorUrl>
+	<license>GNU General Public License version 2 or later</license>
+	<copyright>Copyright (C) 2013 betweenbrain llc. All rights reserved.</copyright>
+	<description>Joomla Ajax Latest Articles Plugin</description>
+
+	<files>
+		<filename plugin="latestarticles">latestarticles.php</filename>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="limit"
+				       type="list"
+				       default="5"
+				       label="Limit"
+				       description="">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="10">10</option>
+					<option value="15">15</option>
+					<option value="20">20</option>
+					<option value="25">25</option>
+					<option value="50">50</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>
