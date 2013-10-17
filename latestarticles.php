@@ -23,7 +23,7 @@ class plgAjaxLatestarticles extends JPlugin {
 			->select($db->quoteName(array('title', 'introtext', 'fulltext')))
 			->from($db->quoteName('#__content'))
 			->setLimit($this->params->get('limit', 5))
-			->order($db->quoteName('modified') . ' DESC');
+			->order($db->quoteName('modified') . ' ASC');
 
 		$db->setQuery($query);
 
