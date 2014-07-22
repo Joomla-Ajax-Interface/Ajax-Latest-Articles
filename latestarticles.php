@@ -18,14 +18,13 @@ class plgAjaxLatestarticles extends JPlugin {
 
 		// Create a new query object.
 		$db    = JFactory::getDbo();
-		$query = $db->getQuery(TRUE);
+		$query = $db->getQuery(true);
 		$query
 			->select($db->quoteName(array('title', 'introtext', 'fulltext')))
 			->from($db->quoteName('#__content'))
-			->setLimit($this->params->get('limit', 5))
 			->order($db->quoteName('modified') . ' ASC');
 
-		$db->setQuery($query);
+		$db->setQuery($query, 0, $this->params->get('limit', 5));
 
 		return $db->loadObjectList();
 	}
