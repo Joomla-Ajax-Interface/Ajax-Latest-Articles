@@ -12,9 +12,11 @@
 // Import library dependencies
 jimport('joomla.plugin.plugin');
 
-class plgAjaxLatestarticles extends JPlugin {
+class plgAjaxLatestarticles extends JPlugin
+{
 
-	function onAjaxLatestarticles() {
+	function onAjaxLatestarticles()
+	{
 
 		// Create a new query object.
 		$db    = JFactory::getDbo();
