@@ -12,13 +12,15 @@
 // Import library dependencies
 jimport('joomla.plugin.plugin');
 
-class plgContentLatestarticles extends JPlugin {
+class plgContentLatestarticles extends JPlugin
+{
 
-	function onAjaxLatestarticles() {
+	function onAjaxLatestarticles()
+	{
 
 		// Create a new query object.
 		$db    = JFactory::getDbo();
-		$query = $db->getQuery(TRUE);
+		$query = $db->getQuery(true);
 		$query
 			->select($db->quoteName(array('title', 'introtext', 'fulltext')))
 			->from($db->quoteName('#__content'))
