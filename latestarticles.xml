@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="2.5"
            type="plugin"
-           group="ajax"
+           group="content"
            method="upgrade">
-	<name>Ajax - Latest Articles</name>
+	<name>Content - Latest Articles</name>
 	<version>0.1</version>
 	<creationDate>May 20, 2013</creationDate>
 	<author>Matt Thomas</author>

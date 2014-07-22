@@ -12,7 +12,7 @@
 // Import library dependencies
 jimport('joomla.plugin.plugin');
 
-class plgAjaxLatestarticles extends JPlugin {
+class plgContentLatestarticles extends JPlugin {
 
 	function onAjaxLatestarticles() {
 
